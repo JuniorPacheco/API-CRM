@@ -7,6 +7,14 @@
       "telefono": "654321",
       "notas": "Hola compadre",
       "id": 1
+    },
+    {
+      "nombre": "solo",
+      "empresa": "Chupalo",
+      "email": "favacatoro@gmail.com",
+      "telefono": "654321",
+      "notas": "zxczc",
+      "id": 2
     }
   ]
 }

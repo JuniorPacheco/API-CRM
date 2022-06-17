@@ -30,7 +30,7 @@ const Formulario = ({dataID}) => {
             .then(res => {
                 console.log(res.data)
                 resetForm()
-                navigate('/clientes')
+                navigate('/')
             })
             .catch(error => console.log(error))  
         }else {
@@ -40,7 +40,7 @@ const Formulario = ({dataID}) => {
             .then(res => {
                 console.log(res.data)
                 resetForm()
-                navigate('/clientes')
+                navigate('/')
             })
             .catch(error => console.log(error))
         }

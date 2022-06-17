@@ -5,7 +5,7 @@ const useDataId = (id) => {
     const [cargando, setCargando] = useState(true)
     const [dataID, setDataID] = useState({})
     useEffect(() => {
-        const url = `http://localhost:4000/clientes/${id}`
+        const url = `${import.meta.env.VITE_API_URL}/${id}`
         axios.get(url)
         .then(res => setDataID(res.data))
         .catch(err => console.log(err))

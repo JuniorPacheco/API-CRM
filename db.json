@@ -7,14 +7,6 @@
       "telefono": "654321",
       "notas": "Hola compadre",
       "id": 1
-    },
-    {
-      "nombre": "Junior Fabian",
-      "empresa": "Extrucol SA",
-      "email": "correo@correo.com",
-      "telefono": "123456",
-      "notas": "Hola compadre",
-      "id": 2
     }
   ]
 }

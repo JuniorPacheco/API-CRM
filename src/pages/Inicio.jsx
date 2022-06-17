@@ -3,13 +3,12 @@ import axios from 'axios'
 import Cliente from '../components/Cliente'
 
 const Inicio = () => {
-
   const [clientes, setClientes] = useState([])
 
   const handleDelete = personalID => {
       const confirmar = confirm('¿Deseas eliminar este cliente?')
       if(confirmar){
-        const url = `http://localhost:4000/clientes/${personalID}`
+        const url = `${import.meta.env.VITE_API_URL}/${personalID}`
         axios.delete(url)
         .then(res => console.log('Eliminado correctamente'))
         .catch(err => console.log(err))
@@ -21,7 +20,7 @@ const Inicio = () => {
   }
 
   useEffect(() => {
-    const url = 'http://localhost:4000/clientes'
+    const url = import.meta.env.VITE_API_URL
     axios.get(url)
     .then(res => setClientes(res.data))
     .catch(err => console.log(err))

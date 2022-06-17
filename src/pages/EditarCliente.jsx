@@ -2,7 +2,6 @@ import { useParams } from 'react-router-dom'
 import Formulario from '../components/Formulario'
 import useDataId from '../hooks/useDataId'
 import Spinner from '../components/Spinner'
-import { data } from 'autoprefixer'
  
 const EditarCliente = () => {
 

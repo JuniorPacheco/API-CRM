@@ -25,7 +25,7 @@ const Formulario = ({dataID}) => {
 
     const handleSubmit = (valores, resetForm) => {
         if(dataID?.nombre){
-            const url = `http://localhost:4000/clientes/${dataID?.id}`
+            const url = `${import.meta.env.VITE_API_URL}/${dataID?.id}`
             axios.put(url, valores)
             .then(res => {
                 console.log(res.data)
@@ -35,7 +35,7 @@ const Formulario = ({dataID}) => {
             .catch(error => console.log(error))  
         }else {
             console.log('Nuevo registro')
-            const url = 'http://localhost:4000/clientes'
+            const url = import.meta.env.VITE_API_URL
             axios.post(url, valores)
             .then(res => {
                 console.log(res.data)

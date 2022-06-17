@@ -14,11 +14,11 @@ const Cliente = ({cliente, handleDelete}) => {
         <td className="p-3">
             <button
                 className="bg-yellow-400 hover:bg-yellow-500 block w-full text-white p-2 uppercase font-bold text-xs rounded-md"
-                onClick={() => navigate(`/clientes/${id}`)}
+                onClick={() => navigate(`/${id}`)}
             >Ver</button>
             <button
                 className="bg-blue-600 hover:bg-blue-700 block w-full text-white p-2 uppercase font-bold text-xs mt-2 rounded-md"
-                onClick={() => navigate(`/clientes/editar/${id}`)}
+                onClick={() => navigate(`/editar/${id}`)}
             >Editar</button>
             <button
                 className="bg-red-600 hover:bg-red-700 block w-full text-white p-2 uppercase font-bold text-xs mt-2 rounded-md"
